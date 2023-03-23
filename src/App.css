@@ -1,0 +1,136 @@
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tasks-container {
+  width: 600px;
+  min-height: 60px;
+  background: #FFFF;;
+  box-shadow: 0px 0px 8px black;
+  padding: 45px;
+  margin-top: 50px;
+  border-radius: 7px;
+  
+}
+
+.tasks-container .task-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-container .task-input input {
+  width: 450px;
+  height: 28px;
+  padding-left: 20px;
+  border: 1px solid #61dafb;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tasks-container .task-input input:focus {
+  outline: none;
+}
+
+.tasks-container .task-input button {
+  width: 112px;
+  height: 31px;
+  border: 1px solid #61dafb;
+  border-left: none;
+  background-color: #61dafb;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 10px;
+  color: #282c34;
+}
+
+.tasks-list .task-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  background: #EEEE;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.tasks-list .task-container .task {
+  width: 400px;
+}
+
+.tasks-list .task-container .task p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tasks-list .task-container .task-operations {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-list .task-container .task-operations button {
+  font-size: 10px;
+  background: red;
+  border: none;
+  padding: 5px;
+  width: 10;
+  height: 20px;
+  width: 98px;
+  font-weight: bold;
+  color: #FFF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.tasks-list .task-container .task-operations .task-completed button {
+  background: darkgreen;
+}
+
+
